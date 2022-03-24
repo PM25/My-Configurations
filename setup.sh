@@ -1,10 +1,10 @@
 # automatic setup
 echo checking update
-sudo apt update && sudo apt upgrade
-sudo apt install curl wget git
+sudo apt --yes update && sudo apt --yes upgrade
+sudo apt --yes install curl wget git
 
 echo installing oh-my-zsh
-sudo apt install zsh
+sudo apt --yes install zsh
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo installing zsh plugins and theme
